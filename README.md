@@ -1,2 +1,3 @@
-# Multi-branch-Neural-Network
-Image classification using neural networks with multiple branches, jointly trained with a differentiable approach.
+# Multi-branch Neural Network for image classification.
+Project developed for the course "Advanced topics in Machine Learning" at Università della Svizzera Italiana.
+The aim of the project is a reproducibility challenge of the paper ["Differentiable branching in deep networks for fast inference"](https://ieeexplore.ieee.org/document/9054209) by professor S. Scardapane et al., DIET Department, Sapienza University of Rome.
