@@ -36,5 +36,6 @@ Table 2. We would like to emphasise that the reason our inference time differs f
 # References
 <a id="1">[1]</a> 
 S. Scardapane, D. Comminiello, M. Scarpiniti, E. Baccarelli and A. Uncini, "Differentiable Branching In Deep Networks for Fast Inference," ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 2020, pp. 4167-4171, doi: 10.1109/ICASSP40776.2020.9054209.
+<br>
 <a id="2">[2]</a>
 S. Teerapittayanon, B. McDanel and H. T. Kung, "BranchyNet: Fast inference via early exiting from deep neural networks," 2016 23rd International Conference on Pattern Recognition (ICPR), Cancun, Mexico, 2016, pp. 2464-2469, doi: 10.1109/ICPR.2016.7900006.
