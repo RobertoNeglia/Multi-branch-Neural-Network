@@ -23,16 +23,13 @@ We implemented the VGG-13 architecture. We did 4 structures: the standard vgg-13
 <br>
 
 # Results
-Table 1 shows the results of the test accuracy on the VGG-13 architecture using CIFAR10, CIFAR100 and CINIC10
-datasets. Likewise to the paper, better test accuracy were obtained using the CIFAR10 dataset, then CINIC-10 and
-the worst results for CIFAR-100. We achieved better results than the result stated in the paper for only dataset
-CINIC-10. We were only able to obtain similar test accuracy to the one in the paper for cifar-10. We believe a number
+Table 1 shows the results of the test accuracy on the VGG-13 architecture using CIFAR10 and CIFAR100 datasets. Likewise to the paper, better test accuracy were obtained using the CIFAR10 dataset, while CIFAR-100 achieved the worst results. We were only able to obtain similar test accuracy to the one in the paper for CIFAR-10. We believe a number
 of factor comes into play, such the paper not giving enough details for some of the architecture implementation they used. <br><br>
-![Screenshot 2023-11-20 162903](https://github.com/RobertoNeglia/Multi-branch-Neural-Network/assets/44726422/2576e177-3e04-4ae8-b5b1-0e1e4f24fd65)
+![Screenshot 2023-11-20 162903]()
 
 We wanted to go into more detail like shown in the paper, so we decided to detail the average test accuracy the inference time and the speed up based on the experiment of VGG-13 using CIFAR10 dataset. This is shown in
 Table 2. We would like to emphasise that the reason our inference time differs from by a large amount is because of the difference in machine with the paper.<br><br>
-![Screenshot 2023-11-20 163715](https://github.com/RobertoNeglia/Multi-branch-Neural-Network/assets/44726422/4ef54cfc-3bc8-48da-bf5c-c37e08883d28)
+![Screenshot 2023-11-20 163715]()
 
 <br>
 
