@@ -1,6 +1,6 @@
 #  Differentiable Branching in Deep Networks for Fast Inference.
 Project developed for the course "Advanced topics in Machine Learning" at Università della Svizzera Italiana.
-The aim of the project is a reproducibility challenge of the paper ["Differentiable branching in deep networks for fast inference"](https://ieeexplore.ieee.org/document/9054209) by professor S. Scardapane et al., DIET Department, Sapienza University of Rome.
+The aim of the project is a reproducibility challenge of the paper ["Differentiable branching in deep networks for fast inference"](https://ieeexplore.ieee.org/document/9054209) [[1]](#1) by professor S. Scardapane et al., DIET Department, Sapienza University of Rome.
 
 <br>
 
@@ -17,30 +17,24 @@ and generalizability of the proposed algorithm in real-world classification task
 <br>
 
 # Model Architecture 
-We implemented the VGG-13 architecture. We did 4 structures: the standard vgg-13(baseline), then the B-net, the authors proposed methodology and then the authors proposed methodology with a different criterion we tried. <br>
-<img width="412" alt="vgg13" src="https://github.com/RobertoNeglia/Multi-branch-Neural-Network/assets/44726422/09f4b6d3-b47f-46b6-9dc8-00b63ee7c866">
+We implemented the VGG-13 architecture. We did 4 structures: the standard VGG-13 (our baseline), then the [B-NET](https://ieeexplore.ieee.org/abstract/document/7900006) ([[2]](#2)), the authors proposed methodology (our interpretation) and the same with a different criterion that we tried. <br>
+<center><img alt="VGG-13 architecture" src="imgs/vgg13.png" width=550></center>
 
 <br>
 
 # Results
 Table 1 shows the results of the test accuracy on the VGG-13 architecture using CIFAR10 and CIFAR100 datasets. Likewise to the paper, better test accuracy were obtained using the CIFAR10 dataset, while CIFAR-100 achieved the worst results. We were only able to obtain similar test accuracy to the one in the paper for CIFAR-10. We believe a number
 of factor comes into play, such the paper not giving enough details for some of the architecture implementation they used. <br><br>
-![Screenshot 2023-11-20 162903]()
+<center><img src="imgs/table1-accuracy.png"></center>
 
 We wanted to go into more detail like shown in the paper, so we decided to detail the average test accuracy the inference time and the speed up based on the experiment of VGG-13 using CIFAR10 dataset. This is shown in
 Table 2. We would like to emphasise that the reason our inference time differs from by a large amount is because of the difference in machine with the paper.<br><br>
-![Screenshot 2023-11-20 163715]()
+<center><img src="imgs/table2-inference-times.png"></center>
 
 <br>
 
 # References
-@inproceedings{repoduPaper,<br>
-  author={Scardapane, Simone and Comminiello, Danilo and Scarpiniti, Michele and Baccarelli, Enzo and Uncini, Aurelio},<br>
-  booktitle={ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)}, <br>
-  title={Differentiable Branching In Deep Networks for Fast Inference}, <br>
-  year={2020},<br>
-  pages={4167-4171},<br>
-  doi={10.1109/ICASSP40776.2020.9054209},<br>
-  ISSN={2379-190X},<br>
-  month={May}
-}
+<a id="1">[1]</a> 
+S. Scardapane, D. Comminiello, M. Scarpiniti, E. Baccarelli and A. Uncini, "Differentiable Branching In Deep Networks for Fast Inference," ICASSP 2020 - 2020 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP), Barcelona, Spain, 2020, pp. 4167-4171, doi: 10.1109/ICASSP40776.2020.9054209.
+<a id="2">[2]</a>
+S. Teerapittayanon, B. McDanel and H. T. Kung, "BranchyNet: Fast inference via early exiting from deep neural networks," 2016 23rd International Conference on Pattern Recognition (ICPR), Cancun, Mexico, 2016, pp. 2464-2469, doi: 10.1109/ICPR.2016.7900006.
